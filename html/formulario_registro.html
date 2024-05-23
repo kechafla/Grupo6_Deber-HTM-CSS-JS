@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="form-registro-1">
+        <form action="">
+            <fieldset>
+                <legend>DIRECCION DE ENVIO</legend>        
+                <label for="calleP">Calle Principal</label> <br>
+                <input type="text" name="calleP" id="calleP"> <br><br>
+    
+                <label for="trans">Transversal</label> <br>
+                <input type="text" name="trans" id="trans"> <br> <br>
+    
+                <input type="checkbox" name="propietario" id="propietario">
+                <label for="propietario">Entrega al propietario.</label> <br>
+    
+                <input type="checkbox" name="tercer" id="tercer" checked>
+                <label for="tercer">Entrega al propietario.</label> <br> <br>
+    
+                <label for="cantones">Cantones: </label>
+                <select name="cantones" id="cantones">
+                    <optgroup label="Pichincha">
+                        <option value="Cayambe">Cayambe</option>
+                        <option value="Mejia">Mejia</option>
+                        <option value="moncayo">Pedro Moncayo</option>
+                        <option value="Pedro Vicente Maldonado">Pedro Vicente Maldonado</option>
+                        <option value="puertoQiotp">Puerto Quito</option>
+                        <option value="Quito" selected>Quito</option>
+                        <option value="Rumiñahui">Rumiñahui</option>
+                        <option value="bancos">San Miguel de los Bancos</option>
+                    </optgroup>
+                </select>
+                <br> <br> <br>
+                <input type="button" value="ENVIAR DATOS" id="enviar">
+            </fieldset>
+        </form>
+    </div>
+    
+    <div class="form-registro-2" id="formRegistro2">
+        <form action="">
+            <fieldset>
+                <legend>INFORMACIÓN CONFIDENCIAL</legend>
+                <label for="postal">Código Postal: </label>
+                <input type="text" name="postal" id="postal"> <br><br>
+
+                <label for="referencial">Referencia de la Dirección: </label> <br>
+                <textarea name="referencial" id="referencial" cols="34" rows="6"></textarea> <br><br>
+
+                <input type="button" value="GUARDAR">
+            </fieldset>
+        </form>
+    </div>
+
+    <br> <br> <br> <br> <br>
+    <button><a href="../index.html">Regresar</a></button>
+    
+    <script src="../js/javaScript.js"></script>
+</body>
+</html>
